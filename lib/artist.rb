@@ -8,7 +8,6 @@ class Artist
     @name = name
     @songs = [] # array of songs for each instance
     @@all << self 
-    @@all << @songs 
   end
 
   # this exposes the @@all Class Variable
