@@ -29,11 +29,11 @@ class Song
         # it calls a Class Method in Artist, that returns an artist object
         # the find_or_create_by_name either finds an existing artist and returns it, or creates a new object and returns it
   def artist_name=(name)
-    self.artist = Artist.add_song(name)
+    self.artist = Artist.find_or_create_by_name(name)
           # after the artist instance is returned
           # this method calls the artist instance method #add_song
           # add_song adds this current song instance to the artist's song list
-    self.artist.add_song(self)
+    self.artist.add_song(artist)
   end
 
 end
