@@ -21,7 +21,7 @@ class Song
         #  it is a writer method that assigns that variable to artist
         #  you are not just assigning the string to artist, because you want  the artist attribute to be an artist instance instead
     song.artist_name = artist
-    
+    song
   end
 
         # this is a setter method, a writer,
